@@ -1,0 +1,14 @@
+.THIS .sidenav {
+    height: 100%;
+    font-weight: bold;
+    font-size:15px;
+    position: fixed;
+    color:#9E7BFF;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin-right:5px;
+    overflow-y: auto;
+    overflow-x: auto;
+    
+}

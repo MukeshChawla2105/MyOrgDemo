@@ -1,0 +1,4 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+	
+    Hi this is Tab 3 - DemoSideBar
+</aura:component>

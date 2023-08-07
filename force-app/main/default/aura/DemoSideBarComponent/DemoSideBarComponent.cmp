@@ -1,0 +1,75 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global">
+    
+    <aura:attribute name="showtabOne" type="boolean" default="false"/>  
+    <aura:attribute name="showtabTwo" type="boolean" default="false"/>  
+    <aura:attribute name="showtabthree" type="boolean" default="false"/>  
+    <aura:attribute name="showtabFour" type="boolean" default="false"/>  
+    <aura:attribute name="showtabFive" type="boolean" default="false"/>  
+    <aura:attribute name="showtabSix" type="boolean" default="false"/>  
+    <div class="">
+        <!--div class="slds-grid slds-wrap">
+        </div -->
+        <lightning:layout class="container" multipleRows="true" >
+            <lightning:layoutItem  size="2"  >
+                <div class="sidenav">
+                    <div class="slds-align_absolute-left slds-m-top_small slds-text-heading_large slds-m-left_small"  style="margin-bottom:0%;"  >
+                        <!--img src="{!$Resource.LeadhubLogo}"  / -->
+                    </div><br/> 
+                    <div class="   slds-p-bottom_x-small   slds-p-left_large"   >
+                        <lightning:button variant="bare"  label="Tab 1"  iconName="utility:company" onclick="{!c.ShowFirsttab}" class="custom-button1 slds-p-left_medium "/>
+                    </div>
+                    <div class="   slds-p-bottom_x-small   slds-p-left_large "   >
+                        <lightning:button variant="bare"  label="Tab 2"  iconName="utility:groups" onclick="{!c.ShowSecondtab}" class="custom-button1 slds-p-left_medium "/>
+                    </div>
+                    <div class="   slds-p-bottom_x-small   slds-p-left_large "   >
+                        <lightning:button variant="bare"  label="Tab 3"  iconName="utility:questions_and_answers" onclick="{!c.Showthirdtab}" class="custom-button1 slds-p-left_medium "/>
+                    </div>
+                    <div class="   slds-p-bottom_x-small  slds-p-left_large "   >
+                        <lightning:button variant="bare"  label="Tab 4"  iconName="utility:contact" onclick="{!c.ShowFourthtab}" class="custom-button1 slds-p-left_medium "/>
+                    </div>
+                    <div class="   slds-p-bottom_x-small   slds-p-left_large "   >
+                        <lightning:button variant="bare"  label="Tab 5"  iconName="utility:dock_panel" onclick="{!c.ShowFifthtab}" class="custom-button1 slds-p-left_medium "/>
+                    </div>
+                    <div class="   slds-p-bottom_x-small   slds-p-left_large "   >
+                        <lightning:button variant="bare"  label="Tab 6"  iconName="utility:dock_panel" onclick="{!c.Showsixthtab}" class="custom-button1 slds-p-left_medium "/>
+                    </div>
+                    
+                </div>
+                
+                
+            </lightning:layoutItem>
+            <lightning:layoutItem class="" size="10" padding="around-medium">
+                
+                <div>
+                    <lightning:layout>
+                        <lightning:layoutItem class="e" size="12"   > 
+                            <aura:if isTrue="{!v.showtabOne}">
+                                <c:DemoSideBarTab1Component />
+                            </aura:if> 
+                            <aura:if isTrue="{!v.showtabTwo}">
+                                <c:DemoSideBarTab2Component />
+                            </aura:if>
+                            <aura:if isTrue="{!v.showtabthree}">
+                                <c:DemoSideBarTab3Component />
+                            </aura:if>
+                            
+                            <aura:if isTrue="{!v.showtabFour}">
+                                <c:DemoSideBarTab4Component />
+                            </aura:if>
+                            
+                            <aura:if isTrue="{!v.showtabFive}">
+                                <c:DemoSideBarTab5Component />
+                            </aura:if>
+                            <aura:if isTrue="{!v.showtabSix}">
+                                <c:DemoSideBarTab6Component />
+                            </aura:if>
+                        </lightning:layoutItem>
+                        
+                    </lightning:layout>
+                </div>
+                
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+    
+</aura:component>
